@@ -27,7 +27,9 @@ const daraagin = document.createElement("button");
 daraagin.innerText = "Daraagin uy";
 daraagin.classList.add("button");
 daraagin.style.display = "none";
-daraagin.onclick = function () {
+daraagin.onclick = daraaginuy;
+
+function daraaginuy() {
   uy = 2;
   etssiintoo = 300;
   too = Math.floor(Math.random() * etssiintoo) + 1;
@@ -37,7 +39,7 @@ daraagin.onclick = function () {
   mdeeleltext.innerText = "Taasan too : 0";
   hint.innerText = "Shine uy ehellee!";
   daraagin.style.display = "none";
-};
+}
 
 function tootaah() {
   const ugugdul = +input.value;
